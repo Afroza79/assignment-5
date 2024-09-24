@@ -98,7 +98,7 @@ function handleDonation(
       totalAmountHeader -= donationValue; // Deduct the donation value
       document.getElementById("totalAmount").textContent = totalAmountHeader + " BDT";
 
-      const donationDate = new Date().toLocaleString();
+      const donationDate = new Date();
       donationHistory.push({
         amount: donationValue,
         date: donationDate,
